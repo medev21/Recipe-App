@@ -7,8 +7,8 @@ from app.main.model.recipe import Recipe
 def save_new_recipe(data):
     #get recipe data
     new_recipe = Recipe(
-        name = data['name']
-        description = data['description']
+        name = data['name'],
+        description = data['description'],
         timestamp = datetime.datetime.utcnow()
     )
 

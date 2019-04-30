@@ -2,7 +2,7 @@ from flask import request
 from flask_restplus import Resource
 
 from ..util.dto import RecipeDto
-from ..service.user_service import save_new_recipe, get_a_recipe, get_all_recipes
+from ..service.recipe_service import save_new_recipe, get_a_recipe, get_all_recipes
 
 api = RecipeDto.api
 _recipe = RecipeDto.recipe
