@@ -2,9 +2,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+import pymysql
 
 # local imports
 from .config import config_by_name
+
+pymysql.install_as_MySQLdb()
 
 #initializers
 db = SQLAlchemy()
